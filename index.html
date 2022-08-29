@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="./styles.css">
+  <title>ROT13 Test</title>
+</head>
+
+<main>
+  <h1>Código de la Princesa</h1>
+  <p>Hice esta aplicación inspirada en ti para podernos enviar mensajes secretos. Te amo.</p>
+  
+  <form class="encrypt card">
+    <div class="input-card">
+      <textarea id="encrypt-input" class="input-field" placeholder="Escribe aquí para encriptar, princesa"></textarea>
+    </div>
+
+    <div id="result-encrypt" class="result-div hidden">
+      <h2>Texto Encriptado</h2>
+      <span id="encrypted-result" class="result breaking"></span>
+    </div>
+  </form>
+
+<!-- -------------------- -->
+
+  <form class="decrypt card">
+    <div class="input-card">
+      <textarea id="decrypt-input" class="input-field" placeholder="Escribe aquí para desencriptar, princesa"></textarea>
+    </div>
+
+    <div id="result-decrypt" class="result-div hidden">
+      <h2>Texto No-Encriptado</h2>
+      <span id="decrypted-result" class="result breaking"></span>
+    </div>
+  </form>
+
+</main>
+
+<script src="./app.js"></script>
+<body>
+  
+</body>
+
+</html>

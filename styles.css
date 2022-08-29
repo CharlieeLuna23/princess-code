@@ -1,0 +1,104 @@
+/* color palette from https://coolors.co/palette/cdb4db-ffc8dd-ffafcc-bde0fe-a2d2ff */
+:root {
+  /*Color Palette 1*/
+  --lavender-blue: #C6BEFE; /*Background*/
+  --aero-blue: #BEFEF1; /*H1 & Input Outline*/
+  --uranian-blue: #BDE0FE; /*Input Background*/
+  --tea-green: #E0FEBE; /*H2 Result*/
+  --green-yellow-crayola: #FFEEA3; /*Result Text*/
+
+}
+
+body {
+  height: 100vh;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--lavender-blue);
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: var(--aero-blue);
+}
+
+p {
+  margin: 10px;
+  color: white;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.input-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-field {
+  resize: vertical;
+  width: 97%;
+  min-height: 3em;
+  max-height: 10em;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+  background-color: var(--uranian-blue);
+  color: black;
+  outline-color: var(--aero-blue);
+  border-color: var(--uranian-blue);
+}
+
+.result-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-div > h2 {
+  color: var(--tea-green);
+}
+
+.result {
+  margin: 0;
+  color: var(--green-yellow-crayola);
+}
+
+.breaking {
+  inline-size: 80%;
+  overflow-wrap: break-word;
+}
+
+.hidden {
+  display: none;
+}
+
+.decrypt {
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 720px) {
+  body {
+    font-size: 18px;
+  }
+
+  .input-field {
+    font-size: 18px;
+  }
+}
